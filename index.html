@@ -4,145 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Trashmaghe.dev | Portfólio</title>
-
-  <!-- CSS principal -->
   <link rel="stylesheet" href="assets/css/style.css" />
-
-  <!-- DevIcons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-
-  <!-- Scripts -->
   <script defer src="assets/js/i18n.js"></script>
-  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
 
-  <!-- Language toggle -->
   <div class="lang-switch">
     <button class="btn" data-lang-btn="pt">🇧🇷 PT</button>
     <button class="btn" data-lang-btn="en">🇺🇸 EN</button>
   </div>
 
-  <!-- Navbar fixa -->
   <nav class="nav">
-    <a href="#home" class="nav-logo">Trashmaghe</a>
+    <a href="index.html" class="nav-logo">Trashmaghe</a>
     <div class="nav-links">
-      <a href="#projects" data-i18n="nav_projects">Projetos</a>
-      <a href="#about" data-i18n="nav_about">Sobre</a>
-      <a href="#experience" data-i18n="nav_experience">Experiência</a>
-      <a href="#contact" data-i18n="nav_contact">Contato</a>
-      <button class="btn btn-small" id="open-cv" data-i18n="nav_cv">CV</button>
+      <a href="projects.html" data-i18n="nav_projects">Projetos</a>
+      <a href="about.html" data-i18n="nav_about">Sobre</a>
+      <a href="experience.html" data-i18n="nav_experience">Experiência</a>
+      <a href="contact.html" data-i18n="nav_contact">Contato</a>
+      <a class="btn btn-small" href="cv.html" data-i18n="nav_cv">CV</a>
     </div>
   </nav>
 
-  <!-- Hero -->
   <header id="home" class="fade-in section">
     <h1 data-i18n="hero_hi" data-i18n-html>👋 Olá, eu sou <span class="highlight">Trashmaghe</span></h1>
     <h2 class="typewriter" data-i18n="hero_role">Developer & Tech Support</h2>
-    <p data-i18n="hero_desc">
-      Crio automações, dashboards e integrações que tornam processos mais rápidos, inteligentes e confiáveis.
-    </p>
+    <p data-i18n="hero_desc">Crio automações, dashboards e integrações...</p>
 
     <div class="buttons">
-      <a href="#projects" class="btn primary" data-i18n="btn_projects">Ver Projetos</a>
+      <a href="projects.html" class="btn primary" data-i18n="btn_projects">Ver Projetos</a>
       <a href="https://github.com/Trashmaghe" target="_blank" class="btn" data-i18n="btn_github">GitHub</a>
       <a href="https://linkedin.com/in/Trashmaghe" target="_blank" class="btn" data-i18n="btn_linkedin">LinkedIn</a>
     </div>
   </header>
-
-  <!-- Skills -->
-  <section class="skills-section slide-up section observe">
-    <h3 data-i18n="skills_title">🧠 Skills Principais</h3>
-    <div class="skills-grid">
-      <div class="skill"><i class="devicon-python-plain colored"></i><p data-i18n="skill_python">Python</p></div>
-      <div class="skill"><i class="devicon-sqlite-plain colored"></i><p data-i18n="skill_sqlite">SQLite / SQL</p></div>
-      <div class="skill"><i class="devicon-fastapi-plain colored"></i><p data-i18n="skill_fastapi">FastAPI</p></div>
-      <div class="skill"><i class="devicon-linux-plain colored"></i><p data-i18n="skill_linux">Linux</p></div>
-      <div class="skill"><i class="devicon-windows8-original colored"></i><p data-i18n="skill_windows">Windows</p></div>
-      <div class="skill"><i class="devicon-github-original colored"></i><p data-i18n="skill_github">GitHub</p></div>
-      <div class="skill"><i class="devicon-html5-plain colored"></i><p data-i18n="skill_html">HTML5</p></div>
-      <div class="skill"><i class="devicon-css3-plain colored"></i><p data-i18n="skill_css">CSS3</p></div>
-    </div>
-  </section>
-
-  <!-- Projetos (cards já existem em projects.html; aqui é âncora) -->
-  <section id="projects" class="section observe">
-    <h3>💻 <span data-i18n="projects_title">Projetos</span></h3>
-    <p class="muted" data-i18n="projects_hint">Veja os destaques abaixo ou a lista completa:</p>
-    <div class="buttons">
-      <a href="projects.html" class="btn" data-i18n="btn_open_projects">Abrir página de projetos</a>
-    </div>
-  </section>
-
-  <!-- Sobre -->
-  <section id="about" class="section observe">
-    <h3 data-i18n="about_title">👤 Sobre mim</h3>
-    <p data-i18n="about_body">
-      Sou desenvolvedor com foco em automação e suporte técnico. Gosto de resolver problemas do mundo real:
-      monitoramento, integrações e pequenas ferramentas que tornam o dia a dia mais eficiente. Trabalho com
-      Python/FastAPI, banco de dados e boas práticas de troubleshooting (Windows e Linux).
-    </p>
-  </section>
-
-  <!-- Experiência -->
-  <section id="experience" class="section observe">
-    <h3 data-i18n="exp_title">🧰 Experiência</h3>
-    <ul class="timeline">
-      <li>
-        <span class="when" data-i18n="exp_1_when">2024–2025</span>
-        <div>
-          <strong data-i18n="exp_1_role">Tech Support • Automação</strong>
-          <p class="muted" data-i18n="exp_1_desc">
-            Criação de scripts em Python para diagnóstico, monitoramento (CPU/RAM/processos) e automações de rotina.
-          </p>
-        </div>
-      </li>
-      <li>
-        <span class="when" data-i18n="exp_2_when">2023–2024</span>
-        <div>
-          <strong data-i18n="exp_2_role">Dev Freelance • Integrações</strong>
-          <p class="muted" data-i18n="exp_2_desc">
-            Integrações REST (ex.: FastAPI) e pequenos dashboards para controle de fluxo e tickets.
-          </p>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Contato -->
-  <section id="contact" class="section observe">
-    <h3 data-i18n="contact_title">📬 Contato</h3>
-    <p class="muted" data-i18n="contact_body">
-      Aberto a oportunidades remotas (PT/EN). Pode chamar por e-mail ou LinkedIn:
-    </p>
-    <div class="buttons">
-      <a href="mailto:trashmaghe@gmail.com" class="btn" data-i18n="btn_email">Enviar e-mail</a>
-      <a href="https://linkedin.com/in/Trashmaghe" target="_blank" class="btn" data-i18n="btn_linkedin">LinkedIn</a>
-      <button class="btn" id="open-cv-2" data-i18n="btn_cv">Ver CV</button>
-    </div>
-  </section>
-
-  <!-- Modal do CV (PDF) -->
-  <div id="cv-modal" class="modal" aria-hidden="true">
-    <div class="modal-backdrop" data-close></div>
-    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="cv-title">
-      <div class="modal-head">
-        <h4 id="cv-title" data-i18n="cv_title">Currículo (PDF)</h4>
-        <button class="btn btn-small" data-close>✕</button>
-      </div>
-      <div class="modal-body">
-        <!-- Coloque seu arquivo em assets/cv/Trashmaghe_CV.pdf -->
-        <object data="assets/cv/Trashmaghe_CV.pdf#view=FitH" type="application/pdf" width="100%" height="100%">
-          <p data-i18n="cv_fallback">
-            Seu navegador não conseguiu abrir o PDF embutido.
-            <a href="assets/cv/Trashmaghe_CV.pdf" target="_blank">Clique aqui para baixar</a>.
-          </p>
-        </object>
-      </div>
-    </div>
-  </div>
 
   <footer class="fade-in-delayed">
     <p data-i18n="footer_text">© 2025 Trashmaghe.dev • Built with ❤️ using HTML, CSS & Python</p>
