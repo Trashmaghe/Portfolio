@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projetos | Trashmaghe.dev</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- DevIcons (ícones coloridos padrão GitHub) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
 
@@ -14,24 +19,49 @@
   </header>
 
   <section class="projects slide-up">
+    <!-- Card 1 -->
     <div class="project-card">
-      <img src="assets/img/system_monitor.png" alt="System Monitor">
+      <img src="assets/img/system_monitor.png" alt="System Monitor" />
       <h3>🧰 System Monitor & Auto Repair</h3>
-      <p>Ferramenta Python que monitora CPU e RAM e reinicia processos automaticamente.</p>
+      <p>Ferramenta em Python que monitora CPU/RAM e reinicia processos automaticamente, gerando logs.</p>
+
+      <div class="stack-icons">
+        <i class="devicon-python-plain colored" title="Python"></i>
+        <i class="devicon-linux-plain colored" title="Linux"></i>
+        <i class="devicon-windows8-original colored" title="Windows"></i>
+      </div>
+
       <a href="project_1.html" class="btn primary">Ver detalhes</a>
     </div>
 
+    <!-- Card 2 -->
     <div class="project-card">
-      <img src="assets/img/helpdesk_manager.png" alt="Help Desk Manager">
+      <img src="assets/img/helpdesk_manager.png" alt="Help Desk Manager" />
       <h3>🖥️ Help Desk Manager</h3>
-      <p>Dashboard web para registrar, priorizar e resolver tickets de suporte técnico.</p>
+      <p>Dashboard web para tickets (CRUD, prioridades, status) com gráfico de progresso.</p>
+
+      <div class="stack-icons">
+        <i class="devicon-flask-original colored" title="Flask"></i>
+        <i class="devicon-sqlite-plain colored" title="SQLite"></i>
+        <i class="devicon-html5-plain colored" title="HTML5"></i>
+        <i class="devicon-css3-plain colored" title="CSS3"></i>
+      </div>
+
       <a href="project_2.html" class="btn primary">Ver detalhes</a>
     </div>
 
+    <!-- Card 3 -->
     <div class="project-card">
-      <img src="assets/img/api_integration.png" alt="API Integration">
+      <img src="assets/img/api_integration.png" alt="API Integration" />
       <h3>🔗 Integration API</h3>
-      <p>API FastAPI que conecta sistemas e automatiza o envio de dados.</p>
+      <p>API com FastAPI integrando serviços externos (ex.: Asana/Clicksign), retornando logs em JSON.</p>
+
+      <div class="stack-icons">
+        <i class="devicon-fastapi-plain colored" title="FastAPI"></i>
+        <i class="devicon-python-plain colored" title="Python"></i>
+        <i class="devicon-git-plain colored" title="Git"></i>
+      </div>
+
       <a href="project_3.html" class="btn primary">Ver detalhes</a>
     </div>
   </section>
