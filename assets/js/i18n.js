@@ -1,4 +1,3 @@
-<script>
 // ===== Simple i18n for static sites (Trashmaghe.dev) =====
 const I18N = {
   pt: {
@@ -19,11 +18,10 @@ const I18N = {
     skill_css: "CSS3",
     footer_text: "© 2025 Trashmaghe.dev • Built with ❤️ using HTML, CSS & Python",
 
-    // Projects page:
     projects_title: "💻 Projetos",
     projects_sub: "Uma coleção de projetos que unem automação, desenvolvimento e suporte técnico.",
     card1_title: "🧰 System Monitor & Auto Repair",
-    card1_desc: "Ferramenta em Python que monitora CPU/RAM e reinicia processos automaticamente.",
+    card1_desc: "Ferramenta em Python que monitora CPU/RAM e reinicia processos automaticamente, gerando logs.",
     card2_title: "🖥️ Help Desk Manager",
     card2_desc: "Dashboard web para registrar, priorizar e resolver tickets de suporte técnico.",
     card3_title: "🔗 Integration API",
@@ -31,7 +29,6 @@ const I18N = {
     btn_details: "Ver detalhes",
     btn_back: "← Voltar",
 
-    // Project detail pages:
     p1_title: "🧰 System Monitor & Auto Repair",
     p1_desc: "Utilitário em Python que monitora CPU, RAM e processos críticos; reinicia serviços travados e registra logs.",
     p2_title: "🖥️ Help Desk Manager",
@@ -79,7 +76,6 @@ const I18N = {
   }
 };
 
-// Read/Save preferred language
 function getInitialLang() {
   const saved = localStorage.getItem("lang");
   if (saved) return saved;
@@ -89,25 +85,26 @@ function getInitialLang() {
 
 function setLang(lang) {
   const dict = I18N[lang] || I18N.en;
+
+  // text nodes
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    if (!key) return;
     const val = dict[key];
     if (val == null) return;
-    // allow HTML (for <span class="highlight">)
     if (el.hasAttribute("data-i18n-html")) el.innerHTML = val;
     else el.textContent = val;
   });
-  // attributes: e.g., placeholder/title via data-i18n-attr="placeholder"
+
+  // attribute bindings (placeholder/title...) - optional extension
   document.querySelectorAll("[data-i18n-attr]").forEach(el => {
-    const attr = el.getAttribute("data-i18n-attr"); // "placeholder,title"
-    attr.split(",").forEach(a => {
+    const attrList = el.getAttribute("data-i18n-attr"); // e.g., "placeholder,title"
+    attrList.split(",").forEach(a => {
       const key = el.getAttribute(`data-i18n-${a}`);
       if (key && dict[key]) el.setAttribute(a.trim(), dict[key]);
     });
   });
 
-  // toggle button active state
+  // toggle active on language buttons
   document.querySelectorAll("[data-lang-btn]").forEach(btn => {
     btn.classList.toggle("active", btn.getAttribute("data-lang-btn") === lang);
   });
@@ -120,12 +117,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const lang = getInitialLang();
   setLang(lang);
 
-  // attach click handlers
   document.addEventListener("click", (e) => {
     const btn = e.target.closest("[data-lang-btn]");
     if (!btn) return;
     setLang(btn.getAttribute("data-lang-btn"));
   });
 });
-</script>
-
