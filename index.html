@@ -3,55 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trashmaghe.dev | Portfólio</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-  <script defer src="assets/js/i18n.js"></script>
+  <title>Higor Leao | Portfólio</title>
 
-  <!-- Skills -->
-<section class="skills-section slide-up section observe">
-  <h3 data-i18n="skills_title">🧠 Skills Principais</h3>
-  <div class="skills-grid">
-    <div class="skill"><i class="devicon-python-plain colored"></i><p data-i18n="skill_python">Python</p></div>
-    <div class="skill"><i class="devicon-sqlite-plain colored"></i><p data-i18n="skill_sqlite">SQLite / SQL</p></div>
-    <div class="skill"><i class="devicon-fastapi-plain colored"></i><p data-i18n="skill_fastapi">FastAPI</p></div>
-    <div class="skill"><i class="devicon-linux-plain colored"></i><p data-i18n="skill_linux">Linux</p></div>
-    <div class="skill"><i class="devicon-windows8-original colored"></i><p data-i18n="skill_windows">Windows</p></div>
-    <div class="skill"><i class="devicon-github-original colored"></i><p data-i18n="skill_github">GitHub</p></div>
-    <div class="skill"><i class="devicon-html5-plain colored"></i><p data-i18n="skill_html">HTML5</p></div>
-    <div class="skill"><i class="devicon-css3-plain colored"></i><p data-i18n="skill_css">CSS3</p></div>
-  </div>
-</section>
-  
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- DevIcons (ícones das skills) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+
+  <!-- i18n e main (typewriter re-trigger está no i18n.js) -->
+  <script defer src="assets/js/i18n.js"></script>
 </head>
 <body>
 
-  
+  <!-- Navbar: logo à esquerda | links no centro | idioma à direita -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Trashmaghe</a>
 
+    <div class="nav-links">
+      <a href="about.html" data-i18n="nav_about">Sobre</a>
+      <a href="experience.html" data-i18n="nav_experience">Experiência</a>
+      <a href="contact.html" data-i18n="nav_contact">Contato</a>
+      <a class="btn btn-small" href="cv.html" data-i18n="nav_cv">CV</a>
+    </div>
 
- <nav class="nav">
-  <a href="index.html" class="nav-logo">Trashmaghe</a>
+    <div class="lang-switch">
+      <button class="btn" data-lang-btn="pt">🇧🇷 PT</button>
+      <button class="btn" data-lang-btn="en">🇺🇸 EN</button>
+    </div>
+  </nav>
 
-  <div class="nav-links">
-    <a href="about.html" data-i18n="nav_about">Sobre</a>
-    <a href="experience.html" data-i18n="nav_experience">Experiência</a>
-    <a href="contact.html" data-i18n="nav_contact">Contato</a>
-    <a class="btn btn-small" href="cv.html" data-i18n="nav_cv">CV</a>
-  </div>
-
-  <div class="lang-switch">
-    <button class="btn" data-lang-btn="pt">🇧🇷 PT</button>
-    <button class="btn" data-lang-btn="en">🇺🇸 EN</button>
-  </div>
-</nav>
-
-
-
+  <!-- Hero -->
   <header id="home" class="fade-in section">
     <h1 data-i18n="hero_hi" data-i18n-html>👋 Olá, eu sou <span class="highlight">Trashmaghe</span></h1>
     <h2 class="typewriter" data-i18n="hero_role">Developer & Tech Support</h2>
-    <p data-i18n="hero_desc">Crio automações, dashboards e integrações...</p>
+    <p data-i18n="hero_desc">
+      Crio automações, dashboards e integrações que tornam processos mais rápidos, inteligentes e confiáveis.
+    </p>
 
     <div class="buttons">
       <a href="projects.html" class="btn primary" data-i18n="btn_projects">Ver Projetos</a>
@@ -59,6 +49,53 @@
       <a href="https://linkedin.com/in/Trashmaghe" target="_blank" class="btn" data-i18n="btn_linkedin">LinkedIn</a>
     </div>
   </header>
+
+  <!-- Skills (de volta, com DevIcons) -->
+  <section class="skills-section slide-up section observe">
+    <h3 data-i18n="skills_title">🧠 Skills Principais</h3>
+
+    <div class="skills-grid">
+      <div class="skill">
+        <i class="devicon-python-plain colored"></i>
+        <p data-i18n="skill_python">Python</p>
+      </div>
+
+      <div class="skill">
+        <i class="devicon-sqlite-plain colored"></i>
+        <p data-i18n="skill_sqlite">SQLite / SQL</p>
+      </div>
+
+      <div class="skill">
+        <i class="devicon-fastapi-plain colored"></i>
+        <p data-i18n="skill_fastapi">FastAPI</p>
+      </div>
+
+      <div class="skill">
+        <i class="devicon-linux-plain colored"></i>
+        <p data-i18n="skill_linux">Linux</p>
+      </div>
+
+      <div class="skill">
+        <i class="devicon-windows8-original colored"></i>
+        <p data-i18n="skill_windows">Windows</p>
+      </div>
+
+      <div class="skill">
+        <i class="devicon-github-original colored"></i>
+        <p data-i18n="skill_github">GitHub</p>
+      </div>
+
+      <div class="skill">
+        <i class="devicon-html5-plain colored"></i>
+        <p data-i18n="skill_html">HTML5</p>
+      </div>
+
+      <div class="skill">
+        <i class="devicon-css3-plain colored"></i>
+        <p data-i18n="skill_css">CSS3</p>
+      </div>
+    </div>
+  </section>
 
   <footer class="fade-in-delayed">
     <p data-i18n="footer_text">© 2025 Trashmaghe.dev • Built with ❤️ using HTML, CSS & Python</p>
