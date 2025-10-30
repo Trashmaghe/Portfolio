@@ -119,6 +119,26 @@ p {
 }
 
 /* Footer */
+
+/* Linha de ícones da stack nos cards */
+.stack-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 14px;
+}
+
+.stack-icons i {
+  font-size: 22px;
+  opacity: 0.9;
+  transition: transform 0.2s ease;
+}
+
+.stack-icons i:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
 footer {
   padding: 20px;
   color: #555;
