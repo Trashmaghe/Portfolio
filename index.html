@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,39 +12,48 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+
+  <!-- i18n -->
+  <script defer src="assets/js/i18n.js"></script>
 </head>
 <body>
 
+  <!-- Language toggle -->
+  <div class="lang-switch">
+    <button class="btn" data-lang-btn="pt">🇧🇷 PT</button>
+    <button class="btn" data-lang-btn="en">🇺🇸 EN</button>
+  </div>
+
   <header class="fade-in">
-    <h1>👋 Olá, eu sou <span class="highlight">Trashmaghe</span></h1>
-    <h2 class="typewriter">Developer & Tech Support</h2>
-    <p>
+    <h1 data-i18n="hero_hi" data-i18n-html>👋 Olá, eu sou <span class="highlight">Trashmaghe</span></h1>
+    <h2 class="typewriter" data-i18n="hero_role">Developer & Tech Support</h2>
+    <p data-i18n="hero_desc">
       Crio automações, dashboards e integrações que tornam processos mais rápidos, inteligentes e confiáveis.
     </p>
 
     <div class="buttons">
-      <a href="projects.html" class="btn primary">Ver Projetos</a>
-      <a href="https://github.com/Trashmaghe" target="_blank" class="btn">GitHub</a>
-      <a href="https://linkedin.com/in/Trashmaghe" target="_blank" class="btn">LinkedIn</a>
+      <a href="projects.html" class="btn primary" data-i18n="btn_projects">Ver Projetos</a>
+      <a href="https://github.com/Trashmaghe" target="_blank" class="btn" data-i18n="btn_github">GitHub</a>
+      <a href="https://linkedin.com/in/Trashmaghe" target="_blank" class="btn" data-i18n="btn_linkedin">LinkedIn</a>
     </div>
   </header>
 
   <section class="skills-section slide-up">
-    <h3>🧠 Skills Principais</h3>
+    <h3 data-i18n="skills_title">🧠 Skills Principais</h3>
     <div class="skills-grid">
-      <div class="skill"><i class="devicon-python-plain colored"></i><p>Python</p></div>
-      <div class="skill"><i class="devicon-sqlite-plain colored"></i><p>SQLite / SQL</p></div>
-      <div class="skill"><i class="devicon-fastapi-plain colored"></i><p>FastAPI</p></div>
-      <div class="skill"><i class="devicon-linux-plain colored"></i><p>Linux</p></div>
-      <div class="skill"><i class="devicon-windows8-original colored"></i><p>Windows</p></div>
-      <div class="skill"><i class="devicon-github-original colored"></i><p>GitHub</p></div>
-      <div class="skill"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
-      <div class="skill"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
+      <div class="skill"><i class="devicon-python-plain colored"></i><p data-i18n="skill_python">Python</p></div>
+      <div class="skill"><i class="devicon-sqlite-plain colored"></i><p data-i18n="skill_sqlite">SQLite / SQL</p></div>
+      <div class="skill"><i class="devicon-fastapi-plain colored"></i><p data-i18n="skill_fastapi">FastAPI</p></div>
+      <div class="skill"><i class="devicon-linux-plain colored"></i><p data-i18n="skill_linux">Linux</p></div>
+      <div class="skill"><i class="devicon-windows8-original colored"></i><p data-i18n="skill_windows">Windows</p></div>
+      <div class="skill"><i class="devicon-github-original colored"></i><p data-i18n="skill_github">GitHub</p></div>
+      <div class="skill"><i class="devicon-html5-plain colored"></i><p data-i18n="skill_html">HTML5</p></div>
+      <div class="skill"><i class="devicon-css3-plain colored"></i><p data-i18n="skill_css">CSS3</p></div>
     </div>
   </section>
 
   <footer class="fade-in-delayed">
-    <p>© 2025 Trashmaghe.dev • Built with ❤️ using HTML, CSS & Python</p>
+    <p data-i18n="footer_text">© 2025 Trashmaghe.dev • Built with ❤️ using HTML, CSS & Python</p>
   </footer>
 
 </body>
