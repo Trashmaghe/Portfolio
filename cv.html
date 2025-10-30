@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="cv_title">Currículo | Trashmaghe.dev</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/i18n.js"></script>
+  <style>
+    .cv-wrap { max-width: 1000px; margin: 40px auto; padding: 0 16px; }
+    .cv-frame { width: 100%; height: 80vh; border: 1px solid var(--line); border-radius: 12px; }
+  </style>
+</head>
+<body>
+
+  <div class="lang-switch">
+    <button class="btn" data-lang-btn="pt">🇧🇷 PT</button>
+    <button class="btn" data-lang-btn="en">🇺🇸 EN</button>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Trashmaghe</a>
+    <div class="nav-links">
+      <a href="projects.html" data-i18n="nav_projects">Projetos</a>
+      <a href="about.html" data-i18n="nav_about">Sobre</a>
+      <a href="experience.html" data-i18n="nav_experience">Experiência</a>
+      <a href="contact.html" data-i18n="nav_contact">Contato</a>
+      <a class="btn btn-small" href="cv.html" data-i18n="nav_cv">CV</a>
+    </div>
+  </nav>
+
+  <div class="cv-wrap">
+    <object class="cv-frame" data="assets/cv/Trashmaghe_CV.pdf#view=FitH" type="application/pdf">
+      <p data-i18n="cv_fallback">
+        Seu navegador não conseguiu abrir o PDF embutido.
+        <a href="assets/cv/Trashmaghe_CV.pdf" target="_blank">Clique aqui para baixar</a>.
+      </p>
+    </object>
+  </div>
+
+  <footer class="fade-in-delayed">
+    <p data-i18n="footer_text">© 2025 Trashmaghe.dev • Built with ❤️ using HTML, CSS & Python</p>
+  </footer>
+
+</body>
+</html>
 
